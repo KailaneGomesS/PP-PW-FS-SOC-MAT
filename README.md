@@ -1,4 +1,4 @@
-# PP-PW-FS-SOC-MAT
+# TROLLEY MIND
 Projeto final\
 Trolley Mind é um jogo de perguntas sobre algumas disciplinas, onde seu personagem está amarrado aos trilhos de trem.Caso você
  erre, seu personagem é esmagado. Caso acerte, o trem muda de caminho. Seu objetivo é manter seu personagem vivo até o final das perguntas
