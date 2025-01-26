@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="/style.css" />
+    <title>Quiz do Trilho</title>
+</head>
+
+<body>
+    <div id="quiz">
+        <div id="score-container">
+            <p>Pontos: <span id="points">0</span></p>
+            <p>Maior Streak: <span id="streak">0</span></p>
+        </div>
+
+        <div id="gif-container">
+            <img id="static-image" src="gifs/img.png" alt="Imagem Inicial">
+        </div>
+
+        <div id="question-container" class="balloon">
+            <p id="question">Carregando pergunta...</p>
+        </div>
+
+        <div id="answers-container">
+            <button class="answer balloon">Alternativa 1</button>
+            <button class="answer balloon">Alternativa 2</button>
+            <button class="answer balloon">Alternativa 3</button>
+            <button class="answer balloon">Alternativa 4</button>
+        </div>
+    </div>
+
+    <div id="overlay">
+        <img id="overlay-gif" src="" >
+        <button id="restart-button" onclick="restartGame()">Iniciar</button>
+    </div>
+
+    <script src="/script.js"></script>
+</body>
+
+</html>

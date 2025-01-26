@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="/style.css" />
+    <title>Tela Inicial</title>
+</head>
+
+<body>
+    <style>
+        body {
+            background: url('gifs/gif trem.gif') no-repeat center center fixed;
+            background-size: 100%;
+            /* Aumenta o tamanho do GIF */
+        }
+
+        #title {
+            position: absolute;
+            top: 28%;
+            width: 100%;
+            text-align: center;
+            font-size: 48px;
+            font-weight: bold;
+            color: black;
+            text-shadow: 2px 2px 4px white;
+        }
+    </style>
+    <br>
+    <br>
+
+    <div id="title">🚂Trolley Mind🚂</div>
+    <div id="start-screen">
+        <button id="start-button">Jogar</button>
+        <br>
+        <br>
+        <select id="category-select">
+            <option value="">Todas as categorias</option>
+            <option value="matematica">Matemática</option>
+            <option value="fisica">Física</option>
+            <option value="hst">Higiene e segurança do trabalho</option>
+            <option value="sociologia">Sociologia</option>
+        </select>
+    </div>
+
+    <script>
+        document.getElementById('start-button').addEventListener('click', () => {
+            const category = document.getElementById('category-select').value;
+            const url = category ? `/quiz?category=${category}` : '/quiz';
+            window.location.href = url; // Redireciona para o quiz com a categoria selecionada
+        });
+    </script>
+</body>
+
+</html>
